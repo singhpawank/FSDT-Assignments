@@ -5,13 +5,14 @@ import datetime
 
 def generate_uniqueId():
 
-    x = uuid.uuid4()
-    ms = time.time_ns()
-    return uuid.uuid5(x, str(ms))
+    x = uuid.uuid4() # Generate random UUID
+    ms = time.time_ns() # time in milliseconds
+    return uuid.uuid5(x, str(ms)) # return UUID based on random UUID(x) and milliseconds(ms)
 
 def assignment1(username, dt):
-    print("Unique Id:", generate_uniqueId())
-    print("User name:", username)
+    print("Unique Id:", generate_uniqueId()) # print unique Id
+    print("User name:", username) # print user name
+    # Print Date and time
     print("Date & Time: {}-{}-{} {}:{}:{} {}".format(dt.day, dt.strftime("%b"), dt.year, dt.strftime("%I"), dt.strftime("%M"), dt.strftime("%S"), dt.strftime("%p")))
 
 def main():
