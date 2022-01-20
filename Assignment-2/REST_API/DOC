@@ -1,0 +1,96 @@
+
+# REST API
+
+
+
+<!--- If we have only one grouop/collection, then no need for the "ungrouped" heading -->
+1. [http://localhost:8000/api/event](#1-httplocalhost8000apievent)
+1. [http://localhost:8000/api/event](#2-httplocalhost8000apievent)
+1. [http://localhost:8000/api/user](#3-httplocalhost8000apiuser)
+1. [http://localhost:8000/api/user](#4-httplocalhost8000apiuser)
+
+
+--------
+
+
+
+### 1. http://localhost:8000/api/event
+
+
+
+***Endpoint:***
+
+```bash
+Method: GET
+Type: 
+URL: http://localhost:8000/api/event
+```
+
+
+
+### 2. http://localhost:8000/api/event
+
+
+
+***Endpoint:***
+
+```bash
+Method: POST
+Type: RAW
+URL: http://localhost:8000/api/event
+```
+
+
+
+***Body:***
+
+```js        
+{
+    "user_id" : "4c647308-e4a8-49e3-a5ca-4cc7334eb422",
+    "name" : "Quiz" ,
+    "occurance" : "W",
+    "startDate" : "2022-01-20",
+    "endDate": "2022-03-30"
+
+}
+```
+
+
+
+### 3. <span style="color: green;">GET</span>  http://localhost:8000/api/user
+
+
+
+***Endpoint:***
+
+```bash
+Method: POST
+Type: RAW
+URL: http://localhost:8000/api/user
+```
+
+
+
+***Body:***
+
+```js        
+{
+    "name" : "Pawa Kumar",
+    "gender" : "M",
+    "email" : "pawankumar@gmail.com"
+}
+```
+
+
+
+### 4. http://localhost:8000/api/user
+
+
+
+***Endpoint:***
+
+```bash
+Method: GET
+Type: 
+URL: http://localhost:8000/api/user
+```
