@@ -27,7 +27,7 @@ And a REST API for the following
 1.  Add User
 2.  Add event for a user
 
-- Documentation for the API can be found in doc folder inside assignment 2 or click here
+- Documentation for the API can be found in REST API DOC.md or click [here](https://github.com/singhpawank/Full-Stack-Developer-Avtaar/blob/assignment-2/Assignment-2/REST%20API%20DOC.md)
 
 ## Requrements for this API
 
