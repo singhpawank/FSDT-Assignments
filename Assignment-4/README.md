@@ -8,31 +8,27 @@ This is a simple UI for a calender to
 This is made with html, CSS and Javascript.
 
 ## Steps to run the code
+
 - Clone branch "assignment-4"
 - Open "Calender/index.html" in browser
 
 ## Events
+
 - All the events are kept in "events.js" file as a list of evetns(["username", "event name", "yyyy-mm-dd"]).
 - To add, remove or update a event, edit the file "events.js".
 
 ## The UI - Calender
 
-- ![Calender](the-UI.png)
+<img src="the-UI.png" alt="The UI - Calender" style="max-width:60rem; margin-left:2rem;" >
 
 ## Show list of Events
 
-1. Events for 24th Jan
+1. **Events for 24th Jan**
 
-   ![Events for 24th Jan](events_for_24thJan.png)
+<img src="events_for_24thJan.png" alt="Events for 24th Jan" style="max-width:60rem; margin-left:2rem;">
 
-2. Events for 5th Feb
+2. **Events for 5th Feb**
 
-   ![Events for5th Feb](events_for_5thFeb.png)
+<img src="events_for_24thJan.png" alt="Events for 5th Feb" style="max-width:60rem; margin-left:2rem;">
 
 ---
-
-   <style type="text/css">
-    img {
-        max-width: 60rem;
-    }
-</style>
