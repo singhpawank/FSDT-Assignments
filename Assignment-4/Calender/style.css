@@ -1,0 +1,264 @@
+:root {
+  --primary: #10989e;
+  --secondary: #e7e9ed;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background-color: #fafafa;
+}
+
+.container {
+  width: 96%;
+  margin: 1.6rem auto;
+  max-width: 36rem;
+  text-align: center;
+}
+
+#title {
+  margin: 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.calender {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #e7e9ed;
+  border-radius: 0;
+  -webkit-box-shadow: 0 4px 22px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 22px 0 rgba(0, 0, 0, 0.05);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.month {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.month i {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #10989e;
+}
+
+.current {
+  align-items: center;
+}
+.current h1 {
+  font-size: 1.5rem;
+
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  margin: 0;
+}
+
+.current p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.1rem 0;
+}
+
+.weekdays {
+  background-color: var(--secondary);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.weekdays span {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 14.28%;
+  flex: 0 0 14.28%;
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  max-width: 14.28%;
+  padding: 4px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.days {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(231, 233, 237, 0.3);
+}
+
+.date-box {
+  height: 2.5rem;
+  transition: backbround-color 0.2s;
+  background-color: #fff;
+  flex-direction: column;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 14.28%;
+  flex: 0 0 14.28%;
+  max-width: 14.28%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date-box:hover:not(.today) {
+  background-color: var(--secondary);
+  cursor: pointer;
+}
+
+.date {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.event {
+  height: 1rem;
+  width: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: backbround-color 0.2s;
+}
+
+.event .button {
+  font-size: 0.8rem;
+  color: black;
+  font-weight: 600;
+  background-color: #c0c0c0;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+}
+
+.button:hover:not(.today) {
+  background-color: var(--primary);
+  cursor: pointer;
+}
+
+.prev-date-box,
+.next-date-box {
+  background-color: #f8f8fa;
+  opacity: 0.5;
+}
+
+.today {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.today:hover {
+  background-color: #108890;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 0.2rem;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 0.15rem solid black;
+  border-radius: 0.5rem;
+  z-index: 10;
+  background-color: white;
+  max-width: 80%;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.model-header {
+  background-color: var(--primary);
+  border: 0.1rem solid black;
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
+  border-bottom-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.model-header h1 {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0.1rem;
+  padding: 0.1rem 0.2rem;
+}
+.events {
+  border: 0.1rem solid black;
+  border-bottom-left-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+}
+
+.events p {
+  color: #283747;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.2rem 0.4rem;
+  margin: 0;
+}
+.alternate:nth-of-type(even) {
+  background-color: var(--secondary);
+}
+.alternate:nth-of-type(odd) {
+  background-color: white;
+}
+.close-button {
+  width: 100%;
+  background-color: var(--secondary);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.1rem solid black;
+  border-radius: 0.5rem;
+  margin-top: 0.2rem;
+
+  transition: backbround-color 0.2s;
+}
+
+.close-button:hover {
+  color: red;
+  background-color: var(--primary);
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
