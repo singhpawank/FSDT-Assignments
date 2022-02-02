@@ -29,6 +29,6 @@ This is made with html, CSS and Javascript.
 
 2. **Events for 5th Feb**
 
-<img src="events_for_5thJan.png" alt="Events for 5th Feb" style="max-width:60rem; margin-left:2rem;">
+<img src="events_for_5thFeb.png" alt="Events for 5th Feb" style="max-width:60rem; margin-left:2rem;">
 
 ---
