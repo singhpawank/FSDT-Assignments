@@ -149,7 +149,7 @@ body {
   border-radius: 50%;
 }
 
-.button:hover:not(.today) {
+.event .button:hover:not(.today) {
   background-color: var(--primary);
   cursor: pointer;
 }
@@ -225,7 +225,7 @@ body {
 .alternate:nth-of-type(odd) {
   background-color: white;
 }
-.close-button {
+.modal .close-button {
   width: 100%;
   background-color: var(--secondary);
   cursor: pointer;
@@ -241,7 +241,7 @@ body {
   transition: backbround-color 0.2s;
 }
 
-.close-button:hover {
+.modal .close-button:hover {
   color: red;
   background-color: var(--primary);
 }
