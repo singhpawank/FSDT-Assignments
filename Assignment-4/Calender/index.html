@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calender</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Calender</h1>
+      <div class="calender">
+        <div class="month">
+          <i class="fas fa-angle-left prev"></i>
+          <div class="current">
+            <h1></h1>
+            <p></p>
+          </div>
+          <i class="fas fa-angle-right next"></i>
+        </div>
+        <div class="weekdays">
+          <span>Sun</span>
+          <span>Mon</span>
+          <span>Tue</span>
+          <span>Wed</span>
+          <span>Thu</span>
+          <span>Fri</span>
+          <span>Sat</span>
+          
+        </div>
+        <div class="days"></div>
+      </div>
+    </div>
+
+    <div class="pop_up">
+      <div class="modal" id="modal">
+        <div class="model-header">
+          <h1></h1>
+        </div>
+        <div class="events"></div>
+
+        <button data-close-button="#modal" class="close close-button">
+          Close
+        </button>
+      </div>
+    </div>
+    <div id="overlay"></div>
+
+    <script src="events.js"></script>
+    <script src="event.js"></script>
+    <script src="script.js"></script>
+    <script src="pop_up.js"></script>
+  </body>
+</html>
