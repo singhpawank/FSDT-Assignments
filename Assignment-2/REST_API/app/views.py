@@ -1,6 +1,6 @@
 from django.http import JsonResponse
 from .models import User, Event
-from .serializers import UserSerializer, UserViewSerializer, EventSerializer, EventViewSerializer
+from .serializers import UserSerializer, EventSerializer
 from rest_framework.response import Response
 from rest_framework.decorators import api_view # To avoid csrf token error
 
@@ -18,7 +18,7 @@ def userView(request):
     elif request.method == 'GET':
 
         Users = User.objects.all()
-        serializer = UserViewSerializer(Users, many=True)
+        serializer = UserSerializer(Users, many=True)
         return JsonResponse(serializer.data, safe=False)
 
 
@@ -35,5 +35,5 @@ def eventView(request):
     elif request.method == 'GET':
 
         Events = Event.objects.all()
-        serializer = EventViewSerializer(Events, many=True)
+        serializer = EventSerializer(Events, many=True)
         return JsonResponse(serializer.data, safe=False)
