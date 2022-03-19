@@ -3,7 +3,6 @@ from django.http import JsonResponse
 from rest_framework.decorators import api_view
 from .models import user, item, booking
 from .serializers import userSerializer, itemSerializer, bookingSerializer
-from api.serializers import userSerializer
 from django.db.models import Q
 
 def is_overlap(item_id_, startDate_, endDate_):
