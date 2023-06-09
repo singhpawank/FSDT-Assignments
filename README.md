@@ -1,4 +1,4 @@
-# Full Stack Developer - Avtaar
+# Full Stack developer training program
 
 * This repo contains assignments of Full Stack developer training program by Avtaar.
 
